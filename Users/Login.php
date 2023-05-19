@@ -7,7 +7,7 @@ if( isset($_POST["login"])){
     $username = $_POST["username"];
     $password = $_POST["password"];
     $id = $_GET["id"];
-
+    
     $result = mysqli_query($conn, "SELECT * FROM users WHERE username = '$username'");
 
     // Check username 
